@@ -12,7 +12,7 @@ from web3.providers.rpc import HTTPProvider
 
 def connect_to_eth():
 	# TODO insert your code for this method from last week's assignment
-		url = "https://eth-mainnet.g.alchemy.com/v2/alch__PYWnEk9s9xeRs9qsr4YK"  # FILL THIS IN
+	url = "https://eth-mainnet.g.alchemy.com/v2/alch__PYWnEk9s9xeRs9qsr4YK"  # FILL THIS IN
 	w3 = Web3(HTTPProvider(url))
 	assert w3.is_connected(), f"Failed to connect to provider at {url}"
 	return w3
